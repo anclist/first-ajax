@@ -46,3 +46,12 @@ Step 4 - When Things Go Wrong...
 3. What is the new HTTP status code?
 
 500
+
+Step 5 - Tidy Up Time...
+Step 6 - All Together Now!
+
+2. What do you see in your Developer Tools? What messages show up in your console?
+When it's ping it succeeds and finishes, and when it's pong it fails and finishes
+
+Step 7 - The Hive Mind (Shared State)
+Step 8 - Sending Data with your Request
