@@ -40,3 +40,9 @@ Step 2 - Binding to A Click Event
 Step 3 - Using Information in the Response
 
 4. Wow what a ride! I came all the way from the server!
+
+Step 4 - When Things Go Wrong...
+
+3. What is the new HTTP status code?
+
+500
