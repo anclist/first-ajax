@@ -8,5 +8,16 @@ $('#button-1').click(function() {
   });
 })
 
+$('#button-2').click(function() {
+  $.ajax({
+    url: 'http://first-ajax-api.herokuapp.com/ping',
+    method: 'GET',
+    dataType: 'text'
+  }).done(function(data) {
+    console.log(data);
+    $('#step3456').append(data)
+  })
+})
+
 
 });

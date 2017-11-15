@@ -36,3 +36,7 @@ xhr /	jquery.min.js:4. On step 0 they were document / Other
 Step 2 - Binding to A Click Event
 
 1. Done
+
+Step 3 - Using Information in the Response
+
+4. Wow what a ride! I came all the way from the server!
