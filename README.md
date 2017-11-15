@@ -55,3 +55,8 @@ When it's ping it succeeds and finishes, and when it's pong it fails and finishe
 
 Step 7 - The Hive Mind (Shared State)
 Step 8 - Sending Data with your Request
+Step 9 - Receiving HTML in the Response
+
+3. Investigate the Request and Response "Headers" in your Network Tab. What is the 'Accepts' of the Request, and the 'Content-Type' of the response?
+Accept:text/html, */*; q=0.01
+Content-Type:text/html; charset=utf-8

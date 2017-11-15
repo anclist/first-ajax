@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   var paragraph = document.createElement('p')
+  var ulCar = document.createElement('ul')
 
 $('#button-1').click(function() {
   $.ajax({
@@ -53,5 +54,15 @@ $('#button-4').click(function() {
   })
 })
 
+$('#button-5').click(function() {
+  $.ajax({
+    url: 'http://first-ajax-api.herokuapp.com/a_car',
+    method: 'GET',
+    dataType: 'html'
+  }).done(function(data) {
+    ulCar.innerHTML = data;
+    $('#step9').append(ulCar);
+  })
+})
 
 });
