@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var count = document.createElement('p')
+  var paragraph = document.createElement('p')
 
 $('#button-1').click(function() {
   $.ajax({
@@ -16,13 +16,15 @@ $('#button-2').click(function() {
     dataType: 'text'
   }).done(function(data) {
     console.log('Success');
-    $('#step3456').append(data);
+    paragraph.innerHTML = "";
+    paragraph.append(data)
+    $('#step3456').append(paragraph);
   }).fail(function() {
     console.log('Failed');
-    $('#step3456').append(`We'll try harder next time.`);
+    paragraph.append(`We'll try harder next time.`);
   }).always(function() {
     console.log('Finished');
-    $('#step3456').append(" Hey the request finished!");
+    paragraph.append(" Hey the request finished!");
   });
 });
 
@@ -32,10 +34,24 @@ $('#button-3').click(function() {
     method: 'GET',
     dataType: 'text'
   }).done(function(data) {
-    count.innerHTML = "";
-    $(count).append(data);
-    $('#step7').append(count);
+    paragraph.innerHTML = "";
+    paragraph.append(data);
+    $('#step7').append(paragraph);
   })
 })
+
+$('#button-4').click(function() {
+  $.ajax({
+    url: 'http://first-ajax-api.herokuapp.com/time',
+    method: 'GET',
+    data: {timezone: 'Europe/Madrid'},
+    dataType: 'text'
+  }).done(function(data) {
+    paragraph.innerHTML = "";
+    paragraph.append(data);
+    $('#step8').append(paragraph);
+  })
+})
+
 
 });
