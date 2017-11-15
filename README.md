@@ -18,4 +18,21 @@ Status Code:200 OK. The request has succeeded
 
 4. Look at the "Initiator" and "Type" columns. Was this an xhr/JavaScript/AJAX request or a normal browser request?
 
-document: It was a normal browser request
+document / Other
+
+Step 1 - Your First AJAX Request
+
+5. What are the values in the "Method" and "Status" columns? Compare these values to Step 0.
+
+Request Method:GET
+Status Code:200 OK
+
+Same as the ones on step 0
+
+6. What are the values in the "Type" and "Initiator" columns? Compare these values to Step 0.
+
+xhr /	jquery.min.js:4. On step 0 they were document / Other
+
+Step 2 - Binding to A Click Event
+
+
