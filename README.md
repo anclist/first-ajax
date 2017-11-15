@@ -35,4 +35,4 @@ xhr /	jquery.min.js:4. On step 0 they were document / Other
 
 Step 2 - Binding to A Click Event
 
-
+1. Done

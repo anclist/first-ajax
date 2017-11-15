@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  /* Your code goes here */
+$('#button-1').click(function() {
+  $.ajax({
+    url: 'http://first-ajax-api.herokuapp.com/',
+    method: 'GET',
+    dataType: 'text'
+  });
+})
+
 
 });
